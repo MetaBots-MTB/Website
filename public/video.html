@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MetaBots</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <link rel="icon" type="image/png" href="images/metabot-logo.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/css/lightgallery.min.css" type="text/css" media="all" />
+
+
+
+</head>
+<body style="margin: 0px">
+<button onclick=" window.open('http://localhost:63342/untitled2/index.html', '_self');" class="btn enter-btn" id="enter-btn">Enter Website</button>
+<video playsinline autoplay muted id="main-video" class="" style="width: 100%">
+    <source src="video/mainvideo.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+</video>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.21/js/lightgallery-all.min.js"></script>
+<script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
+<script type='text/javascript'>
+    document.getElementById('main-video').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+        $("#enter-btn").addClass("show-enter-btn");
+    }
+</script>
+
+</body>
+</html>
