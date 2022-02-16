@@ -333,6 +333,8 @@ header ul li a:hover {
     width: 100%;
     border-radius: 50%;
     height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1
 }
 
 .team-card p {
@@ -401,7 +403,7 @@ header ul li a:hover {
     width: 100%
 }
 
-.tokenomic-holder li {;
+.tokenomic-holder li {
     color: #c4c4c4;
     text-align: left;
     margin: 5px 0;
@@ -409,7 +411,7 @@ header ul li a:hover {
     font-weight: 500
 }
 
-.tokenomic-holder ul span {;
+.tokenomic-holder ul span {
     color: #c4c4c4;
     text-align: left;
     font-size: 14px;
@@ -493,7 +495,7 @@ header ul li a:hover {
     border-bottom: 2px solid #5fcc9a
 }
 
-.roadmap-card:nth-child(2) {;
+.roadmap-card:nth-child(2) {
     border-right: 2px dashed #5fcc9a
 }
 
@@ -856,7 +858,7 @@ footer li {
     margin: 0
 }
 
-.copyright-bar ul {;
+.copyright-bar ul {
     margin: 0
 }
 
@@ -1055,17 +1057,17 @@ footer li {
     color: #5fcc9a
 }
 
-#mainVideo {
+#main-video {
     width: 100vw;
     height: 100vh;
-    padding: 5%;
+    /* padding: 5%; */
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000000db;
+    background-color: #000;
     z-index: 99;
-    transition: all 500ms ease
+    transition: all 500ms ease;
 }
 
 .video-ended {
@@ -1153,7 +1155,7 @@ footer li {
     }
 
     .banner-text-box {
-        backdrop-filter: brightness(0.3);
+        /* backdrop-filter: brightness(0.3);
         color: #fff;
         width: 100%;
         display: flex;
@@ -1164,7 +1166,13 @@ footer li {
         padding: 10px 50px 10px;
         transform: none;
         left: 0;
-        top: 0;
+        top: 0; */
+
+        color: #c4c4c4;
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
 
     }
 
@@ -1199,9 +1207,9 @@ footer li {
         height: 100vh;
     }
 
-    .banner-text-box {
+    /* .banner-text-box {
         height: 100vh
-    }
+    } */
 
     .banner-text-box {
         padding: 10px
