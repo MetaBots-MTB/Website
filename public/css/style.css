@@ -98,6 +98,17 @@ header ul li a:hover {
     padding: 0.5% 3%;
 }
 
+
+
+.video-close{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+}
+
+
+
+
 .search {
     position: relative
 }
@@ -148,7 +159,7 @@ header ul li a:hover {
     color: #c4c4c4;
     position: absolute;
     left: 5%;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
 }
 
@@ -824,7 +835,7 @@ footer .col-md-4 li {
 }
 
 footer .col-md-4 img {
-    margin: 0 0 20px 0;
+    margin: 0 0 0px 0;
 }
 
 footer li {
@@ -1099,6 +1110,29 @@ footer form{
     user-select: none;
     z-index: -1 !important;
 }
+
+.important-dates{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    color: #c4c4c4;
+    text-align: center;
+    border-radius: 15px;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    right: 5%;
+    font-size: 11px;
+}
+
+.important-dates h6{font-family: 'Debug-font', serif;font-size: 46px;text-transform: uppercase;color: #0d6efd;}
+.important-dates ul{padding: 0}
+.important-dates ul li{margin: 10px 0}
+.important-dates ul:first-of-type{font-weight: 700;font-size: 14px}
+
+
 /*.hide4{*/
 /*    padding-right: 0px !important;*/
 /*    display: none !important;*/
@@ -1124,8 +1158,8 @@ footer form{
 
     position: absolute;
     z-index: 100;
-    color: white;
-    filter: contrast(0.1);
+    color: white !important;
+    /* filter: contrast(0.1); */
     right: 11px;
     top: 10px;
     font-size: 21px;
@@ -1201,7 +1235,7 @@ footer form{
     }
 
     .contract {
-        width: 500px
+        max-width: 360px
     }
 
     .banner-text-box .btn {
@@ -1209,7 +1243,10 @@ footer form{
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
+    .banner{height: fit-content}
+    .banner-text-box{position: relative;transform: unset;left: 0;padding: 150px 40px 0}
+    .important-dates{position: relative;transform: unset;left: 0;padding: 50px 40px 20px}
     .team-page-sec {
         padding-top: 150px
     }
@@ -1232,17 +1269,8 @@ footer form{
         display: block
     }
 
-    .banner {
-        height: 100vh;
-    }
 
-    /* .banner-text-box {
-        height: 100vh
-    } */
 
-    .banner-text-box {
-        padding: 10px
-    }
 
     .listing-slider-sec {
         padding: 30px
@@ -1348,7 +1376,14 @@ footer form{
     }
 
 }
-
+.close-button {
+    border: 2px solid white;
+    padding: 5px 25px;
+    outline: none;
+    background: none;
+    border-radius: 50px;
+    color: #0d6efd;
+}
 @media screen and (max-width: 570px) {
     .team-page-sec .row {
         grid-template-columns: 1fr;
@@ -1364,9 +1399,12 @@ footer form{
 @media screen and (max-width:440px){
     .banner-text-box{
         position: initial;
-        padding-top: 240px;
+        padding-top: 135px;
         transform: none;
     }
+    .important-dates{position: relative;transform: unset;left: 0;padding: 50px 0px 20px}
+    .important-dates a {font-size: 14px;}
+
 }
 
 @media screen and (max-width: 470px) {
