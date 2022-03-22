@@ -1405,7 +1405,7 @@ footer form{
         padding-top: 135px;
         transform: none;
     }
-    .important-dates{position: relative;transform: unset;left: 0;padding: 50px 0px 20px}
+    .important-dates{position: relative;transform: unset;left: 40px;padding: 50px 0px 20px}
     .important-dates a {font-size: 14px;}
 
 }
