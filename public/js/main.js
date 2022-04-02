@@ -128,10 +128,15 @@ function copyText(text) {
     // /* Copy the text inside the text field */
     // navigator.clipboard.writeText(copyText.value);
 
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(text).then(() => {
+        alert("successfully copied: "+ text);
+      })
+      .catch(() => {
+        alert("something went wrong");
+      });;
 
 
     /* Alert the copied text */
-    alert("Copied the text: " + text);
+    // alert("Copied the text: " + text);
 }
 
