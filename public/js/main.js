@@ -115,18 +115,23 @@ $(window).on('load', function() {
 
 });
 
-function copyText() {
+function copyText(text) {
     /* Get the text field */
-    var copyText = document.getElementById("contract");
+    // var copyText = document.getElementById("contract");
 
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    // console.log(copyText.select())
 
-    /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.value);
+    // /* Select the text field */
+    // copyText.select();
+    // copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    // /* Copy the text inside the text field */
+    // navigator.clipboard.writeText(copyText.value);
+
+    navigator.clipboard.writeText(text);
+
 
     /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
+    alert("Copied the text: " + text);
 }
 
