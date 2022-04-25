@@ -1248,7 +1248,7 @@ footer form{
 
 @media screen and (max-width: 769px) {
     .banner{height: fit-content}
-    .banner-text-box{position: relative;transform: unset;left: 0;padding: 150px 40px 0}
+    .banner-text-box{position: relative;transform: unset;left: 0;padding: 150px 40px 50px}
     .important-dates{position: relative;transform: unset;left: 0;padding: 50px 40px 20px}
     .team-page-sec {
         padding-top: 150px
